@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/output.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="bg-red-400 text-5xl">header</h1>
+
+<div class="w-full max-w-xs mx-auto">
+    <form id="userForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                User Name
+            </label>
+            <input id="username" name="username" type="text" placeholder="Enter your username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <p id="usernameError" class="text-red-500 text-xs italic hidden">Username should contain only letters and be at least 6 characters long.</p>
+        </div>
+        <div class="flex items-center justify-between">
+            <button id="submitButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+<script>
+    document.getElementById('submitButton').addEventListener('click', function() {
+        var usernameInput = document.getElementById('username');
+        var usernameError = document.getElementById('usernameError');
+
+        // Regular expression to match only letters
+        var lettersOnly = /^[A-Za-z]+$/;
+
+        // Check if the username contains only letters and is longer than 6 characters
+        if (!lettersOnly.test(usernameInput.value) || usernameInput.value.length < 6) {
+            usernameInput.classList.add('border-red-500');
+            usernameError.classList.remove('hidden');
+        } else {
+            usernameInput.classList.remove('border-red-500');
+            usernameError.classList.add('hidden');
+            // If the form is valid, you can submit it here
+            document.getElementById('userForm').submit();
+        }
+    });
+</script>
+
+</body>
+</html>
+

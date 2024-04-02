@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1092887231.index
+971403665.index
+2022323485.index
+2037298992.index
+4284712354.index
+1304860133.index
+2432721201.index

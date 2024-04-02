@@ -1,0 +1,13 @@
+INDEX VERSION 1.134
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2564844872.index
+\coursework\src\main\java
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\964183701.index
+\ElectronicEcommerce\src\main\java
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1961547949.index
+\EcommerceV2\src\main\java
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2490518360.index
+\ElectronicEcommerce\src\main\java
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3970090813.index
+\coursework\src\main\java
+C:\Users\VICTUS\Desktop\Ecommerce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2631283819.index
+\CourseworkEcommerce\src\main\java

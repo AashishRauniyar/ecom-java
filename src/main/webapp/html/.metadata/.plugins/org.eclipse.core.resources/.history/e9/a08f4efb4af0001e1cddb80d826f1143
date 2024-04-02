@@ -1,0 +1,5 @@
+package com.coursework.controller;
+
+public class DatabaseController {
+
+}

@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/output.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="bg-red-400 text-5xl">header</h1>
+<nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-indigo-500 font-bold text-lg">Kyube Gadgets</a>
+            <!-- Navigation Links -->
+            <div class="hidden md:block">
+                <a href="#" class="my-1 mx-4 text-sm text-gray-700 font-medium hover:text-indigo-500">Home</a>
+                <a href="#" class="my-1 mx-4 text-sm text-gray-700 font-medium hover:text-indigo-500">About</a>
+                <a href="#" class="my-1 mx-4 text-sm text-gray-700 font-medium hover:text-indigo-500">Contact Us</a>
+                <!-- Categories Dropdown -->
+                <div class="relative inline-block">
+                    <button class="my-1 mx-4 text-sm text-gray-700 font-medium hover:text-indigo-500 focus:outline-none">Categories</button>
+                    <div class="absolute hidden z-10 left-0 mt-2 w-40 bg-white shadow-md rounded-md">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electronics</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Clothing</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Books</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Accessories</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Button (Hidden on desktop) -->
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <!-- Hamburger icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+        document.getElementById("showPasswordCheckbox").addEventListener("change", function() {
+            var passwordInput = document.getElementById("password");
+            var retypePasswordInput = document.getElementById("retypePassword");
+
+            if (this.checked) {
+                passwordInput.type = "text";
+                retypePasswordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+                retypePasswordInput.type = "password";
+            }
+        });
+    </script>
+
+</body>
+</html>
+
